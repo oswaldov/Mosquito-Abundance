@@ -14,8 +14,6 @@ library(modEvA)
 library(performance)
 library(MASS)
 
-getwd()
-
 ##Load data
 mosquicountcx <-read.csv("mosquitodataculex.csv", header=TRUE)
 head(mosquicountcx,4)
