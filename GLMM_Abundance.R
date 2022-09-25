@@ -226,6 +226,183 @@ r2(hnbmd7);r2(hnbmd8);r2(hnbmd9);r2(hnbmd10)
 summary(zinbmd7)
 
 ##Residuals best model: QQ plot residuals and residuals vs predicted
-simulateResiduals(fittedModel = zinbmd7, plot = T)
+simulationOutput <- simulateResiduals(fittedModel = zinbmd7, plot = T)
+simulationOutput
 
+##Check that the model is able to model the zero count portion of the dataset
+testZeroInflation(simulationOutput)
+
+##Generate new data to check and to plot model output
+newdata0 = newdata = unique(mosquicount[,c("site","monthf","trap_type","tmean","sqtmean","precip","distance")])
+head(newdata0,20)
+
+## Model predictions
+
+X.cond <- model.matrix(lme4::nobars(formula(zinbmd7)[-2]), newdata0)
+head(X.cond)
+beta.cond <- fixef(zinbmd7)$cond
+head(beta.cond)
+pred.cond <- X.cond %*% beta.cond
+head(pred.cond)
+
+
+ziformula = zinbmd7$modelInfo$allForm$ziformula
+X.zi <- model.matrix(lme4::nobars(ziformula),newdata0)
+head(X.zi)
+beta.zi <- fixef(zinbmd7)$zi
+head(beta.zi)
+pred.zi <- X.zi %*% beta.zi
+head(pred.zi)
+
+
+##estimates of the linear predictor
+
+pred.ucount <- exp(pred.cond)*(1-plogis(pred.zi))
+head(pred.ucount,10)
+
+##estimates of standard errors and CIs
+
+pred.condpar.psim <- mvrnorm(1000, mu=beta.cond, Sigma = vcov(zinbmd7)$cond) 
+head(pred.condpar.psim)
+pred.cond.psim <- X.cond %*% t(pred.condpar.psim)
+pred.zipar.psim <- mvrnorm(1000, mu=beta.zi, Sigma =vcov(zinbmd7)$zi)
+pred.zi.psim <- X.zi %*% t(pred.zipar.psim)
+pred.ucount.psim <- exp(pred.cond.psim)*(1-plogis(pred.zi.psim))
+
+ci.ucount <- t(apply(pred.ucount.psim,1,quantile,c(0.025,0.975))) ## alpha = 0.05
+head(ci.ucount)
+ci.ucount <- data.frame(ci.ucount)
+names(ci.ucount) <- c("ucount.low","ucount.high")
+head(ci.ucount)
+pred.ucount <- data.frame(newdata0, pred.ucount, ci.ucount)
+head(pred.ucount,20)
+
+##Mean and median observed mosquito count
+
+library(plyr)
+
+real.count <- ddply(mosquicount, ~site+monthf+trap_type+distance+tmean+precip+sqtmean,
+                    summarize, m=median(count), mu=mean(count))
+
+##expression for italic style for plots
+ylb <- expression(Predicted~italic(Cx.~quinquefasciatus)~abundance)
+
+##Predicted vs Observed mosquito abundance by month and sites 
+
+##By trap type and month
+ggplot(pred.ucount,aes(x=monthf, y=pred.ucount, colour=trap_type)) + geom_point(shape=1, size=2) +
+  geom_errorbar(aes(ymin=ucount.low, ymax=ucount.high))+
+  geom_point(data=real.count, aes(x=monthf, y=m, colour=trap_type), shape=20, size=2)+
+  ylab(ylb)+
+  xlab("Months") +
+  scale_x_discrete(labels=month.abb)
+
+##By trap type, month, and site
+ggplot(pred.ucount,aes(x=site, y=pred.ucount, colour=trap_type)) + geom_point(shape=1, size=2) +
+  geom_errorbar(aes(ymin=ucount.low, ymax=ucount.high))+
+  geom_point(data=real.count, aes(x=site, y=m, colour=trap_type), shape=20, size=2)+
+  facet_wrap(~monthf) +
+  ylab(ylb)+
+  xlab("Sites") 
+
+
+
+## abundamce vs month
+
+meancountS <- pred.ucount %>%
+  dplyr::group_by(monthf, trap_type) %>%
+  summarise(estimated = mean(pred.ucount, na.rm = T), cilow = mean(ucount.low, na.rm = T),
+            cihigh = mean(ucount.high, na.rm = T))
+
+abundco2S <-meancountS[which(meancountS$trap_type=="co2"), ]  ##CO2 traps
+
+abundgravidS <-meancountS[which(meancountS$trap_type=="gravid"), ]  ##Gravid traps
+
+
+##REAL COUNT
+
+realcountS <- real.count %>%
+  dplyr::group_by(monthf, trap_type) %>%
+  summarise(observed = mean(m, na.rm = T))
+
+realco2S <-realcountS[which(realcountS$trap_type=="co2"), ]  ## CO2 traps
+
+realgravidS <-realcountS[which(realcountS$trap_type=="gravid"), ]  ##Gravid traps
+
+
+##Abundance by month plots
+
+library(ggplot2)
+library(RCurl)
+
+##For CO2 traps
+ggplot(abundco2S,aes(x=monthf, y=estimated)) + geom_point(shape=20, size=4, color = "black") +
+  geom_errorbar(aes(ymin=cilow, ymax=cihigh), width = 0.2, size = 1.2, color = "blue") +
+  geom_point(data=realco2S, aes(x=monthf, y=observed), shape=20, size=4, color = "red")+
+  labs(x="Months", y=ylb, color = "Legend") +
+  scale_color_manual("",
+                     breaks = c("Estimated","Observed"),
+                     values = c("Estimated" = "black", "Observed" = "red"))
+
+
+##For gravid traps
+ggplot(abundgravidS,aes(x=monthf, y=estimated)) + geom_point(shape=20, size=4, color = "black") +
+  geom_errorbar(aes(ymin=cilow, ymax=cihigh), width = 0.2, size = 1.2, color = "blue") +
+  geom_point(data=realgravidS, aes(x=monthf, y=observed), shape=20, size=4, color = "red")+
+  labs(x="Months", y=ylb, color = "Legend") +
+  scale_color_manual("",
+                     breaks = c("Estimated","Observed"),
+                     values = c("Estimated" = "black", "Observed" = "red"))
+
+
+
+## BY site 
+
+MeanAbund <- pred.ucount %>%
+  dplyr::group_by(site, trap_type) %>%
+  summarise(estimated = mean(pred.ucount, na.rm = T), cilow = mean(ucount.low, na.rm = T),
+            cihigh = mean(ucount.high, na.rm = T))
+
+##Split data set between CO2 and gravid traps
+
+PAbundCO2 <- MeanAbund[which(MeanAbund$trap_type=="co2"), ]
+
+PAbundGravid <-MeanAbund[which(MeanAbund$trap_type=="gravid"), ]
+
+
+##Observed counts
+
+Realcount <- real.count %>%
+  dplyr::group_by(site, trap_type) %>%
+  summarise(observed = mean(m, na.rm = T))
+
+##Split by trap type
+
+RAbundCO2 <- Realcount[which(Realcount$trap_type=="co2"), ]
+
+RAbundGravid <- Realcount[which(Realcount$trap_type=="gravid"), ]
+
+
+## PLot abundance by site for CO2 traps
+ylb <- expression(Average~italic(Cx.~quinquefasciatus)~abundance~-~CO2~traps) ##expression italics for label
+
+ggplot(PAbundCO2,aes(x=site, y=estimated)) + geom_point(shape=20, size=4, color = "black") +
+  geom_errorbar(aes(ymin=cilow, ymax=cihigh), width = 0.2, size = 1.2, color = "blue") +
+  geom_point(data=RAbundCO2, aes(x=site, y=observed), shape=20, size=4, color = "red")+
+  labs(x="Sites", y=ylb, color = "Legend") +
+  scale_color_manual("",
+                     breaks = c("Estimated","Observed"),
+                     values = c("Estimated" = "black", "Observed" = "red"))
+
+
+## PLot abundance by site for gravid traps
+ylb <- expression(Average~italic(Cx.~quinquefasciatus)~abundance~-~gravid~traps) ##expression italics for label
+
+ggplot(PAbundGravid,aes(x=site, y=estimated)) + geom_point(shape=20, size=4, color = "black") +
+  geom_errorbar(aes(ymin=cilow, ymax=cihigh), width = 0.2, size = 1.2, color = "blue") +
+  geom_point(data=RAbundGravid, aes(x=site, y=observed), shape=20, size=4, color = "red")+
+  labs(x="Sites", y=ylb, color = "Legend") +
+  scale_color_manual("",
+                     breaks = c("Estimated","Observed"),
+                     values = c("Estimated" = "black", "Observed" = "red"))
 
