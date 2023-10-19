@@ -1,2 +1,2 @@
 # Mosquito-Abundance
-Estimates of Culex quinquefasciatus occurrence and abundance in Hawaii Island
+Estimates of Culex quinquefasciatus occurrence and abundance in Hawaii Island using count data.
