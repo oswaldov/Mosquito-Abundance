@@ -15,10 +15,8 @@ library(GGally)
 
 ##Load malaria-climate data sets
 mosqcountcx <-read.csv("data/TrainDataCx.csv", header=TRUE)
-head(mosqcountcx,3)
 
 test_Data <- read.csv("data/TestDataCx.csv", header=TRUE)
-head(test_Data,3)
 
 ##Be sure year and month are factors
 
