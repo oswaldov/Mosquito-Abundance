@@ -71,10 +71,8 @@ tempmin <- c("tmin","tminlag1","tminlag2","tminlag3")
 
 all<- c(preds, geo, loc, precip, tempmean)
 
-
 dataNS <- mosqcountcx[,all]
-head(dataNS)
-dim(dataNS)
+
 
 ##Test data
 datatestNS <- test_Data[,c(12,2,6,13,14,15,16,17,18,19,20)]
@@ -135,19 +133,8 @@ library(randomForest)
 preds.rpart = predict(f,newdata = datatestNS,type = "class")
 CrossTable(datatestNS$Cxpa,preds.rpart,chisq = F,prop.r = F,prop.c = F,prop.t = F,prop.chisq = F)
 
-((2854 + 618)/nrow(datatestNS))*100
-
-PrecisionS <- 618/886 ; PrecisionS
-
-RecallS <- 618/1145 ; RecallS
-
-F1S <- 2 * ((70*54)/(70+54)) ; F1S
-
-
 ## here's what rpart gives for its trimmed tree if I don't include a
 ## controler
-
-head(dataCX,2)
 
 par(mfrow=c(1,1))
 f.d<-rpart(Cxpa ~  . , method="class", data=dataCX)
@@ -157,11 +144,8 @@ plotcp(f.d)
 par(mfrow=c(1,1))
 rpart.plot(f.d,type=4, extra=104, box.palette = "GnBu",branch.lty=3,shadow.col="gray")
 
-
-
 ##GLM model
 ##models
-
 
 m.null<- glm(Cxpa ~ 1, family="binomial", data=dataCX) ## null model
 m.null
@@ -186,21 +170,14 @@ predict <- predict(bmodel, datatest, type = 'response')
 table_mat <- table(datatest$Cxpa, predict > 0.5)
 table_mat
 
-
 accuracy_Test <- sum(diag(table_mat)) / sum(table_mat)
 accuracy_Test
-
-precGLM <- 543/820 ; precGLM
-recallGLM <- 543/1145 ; recallGLM
-
-F1GLM <- 2 * ((66*47)/(66+47)) ; F1GLM
 
 ## Q-Q plots
 
 qr2<- qresiduals(modelcx)
 length(qr2)
 summary(qr2)
-
 
 par(mfrow=c(1,1))
 qqnorm(qr2, ylim = c(-6,6), xlim=c(-5,5), main = "Normal Q-Q Plot", las=1, bty="o"); qqline(qr2)
@@ -301,7 +278,6 @@ legend(100, 0.95, c("fitted values", "ave fitted"),
 legend(x=1180, y=1.2, legend="C", xpd = NA, bty="n", cex = 1.7)
 
 
-
 ###Preciplag1
 
 o<-order(dataCX$preciplag1)
@@ -348,8 +324,6 @@ legend(100, 0.95, c("fitted values", "ave fitted"),
 
 legend(x=1200, y=1.2, legend="D", xpd = NA, bty="n", cex = 1.6)
 
-
-
 ## Precipitation lag2
 
 o<-order(dataCX$preciplag2)
@@ -374,7 +348,6 @@ y.m2
 lines(seq(0, 1200, by=10), y.m2$fit, col=2, lwd=3)
 legend(100, 0.95, c("fitted values", "ave fitted"),
        col=1:2, lty=c(0, 1), lwd=c(0,3), pch=c(21, 0)) 
-
 
 
 ## lets try it with the tree
@@ -420,7 +393,6 @@ y.m2$fit
 lines(seq(0,2500, by=100), y.m2$fit, col=2, lwd=3)
 legend(200, 0.95, c("fitted values", "ave fitted"),
        col=1:2, lty=c(0, 1), lwd=c(0,3), pch=c(21, 0)) 
-
 
 ## lets try it with the tree
 f.pred<-predict(f, type="vector")
