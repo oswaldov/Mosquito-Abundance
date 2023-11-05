@@ -16,9 +16,6 @@ library(MASS)
 
 ##Load data
 mosquicountcx <-read.csv("mosquitodataculex.csv", header=TRUE)
-head(mosquicountcx,4)
-dim(mosquicountcx)
-names(mosquicountcx)
 
 ##Be sure year and month are factors
 mosquicountcx$yearf <- as.factor(mosquicountcx$year) 
@@ -29,10 +26,8 @@ mosquicountcx$sqtmean <- mosquicountcx$tmean^2
 
 ##Select your variables of interest
 mosquicount <- mosquicountcx[c(1,3,6,7,12,15:18,20,32,33,34)]
-head(mosquicount)
 
 ## Poisson models
-
 pmd1 <- glmmTMB(count ~ site + (1|yearf), mosquicount, family = poisson)
 pmd2 <- glmmTMB(count ~ site + monthf + (1|yearf), mosquicount, family = poisson)
 pmd3 <- glmmTMB(count ~ site + monthf + trap_type + (1|yearf), mosquicount, family = poisson)
@@ -51,7 +46,6 @@ pmd10 <- glmmTMB(count ~ site + monthf + trap_type + tmean + sqtmean + precip + 
 
 ##Estimate AIC values
 AIC(pmd1, pmd2, pmd3, pmd4, pmd5, pmd6, pmd7, pmd8, pmd9, pmd10)
-
 
 ##Negative Binomial models
 
@@ -72,7 +66,6 @@ nbmd10 <- glmmTMB(count ~ site + monthf + trap_type + tmean + sqtmean + precip +
 
 ##Estimate AIC values
 AIC(nbmd1, nbmd2, nbmd3, nbmd4, nbmd5, nbmd6, nbmd7, nbmd8, nbmd9, nbmd10)
-
 
 ## NEGATIVE BINOMIAL WITH DISPERSION
 
@@ -122,8 +115,6 @@ zipmd10 <- glmmTMB(count ~ site + month + trap_type + tmean + sqtmean + precip +
 
 ##Estimate AIC values
 AIC(zipmd1, zipmd2, zipmd3, zipmd4, zipmd5, zipmd6, zipmd7, zipmd8, zipmd9, zipmd10)
-
-
 
 ## ZERO INFLATED NEGATIVE BINOMIAL MODELS
 
@@ -253,7 +244,6 @@ head(beta.zi)
 pred.zi <- X.zi %*% beta.zi
 head(pred.zi)
 
-
 ##estimates of the linear predictor
 
 pred.ucount <- exp(pred.cond)*(1-plogis(pred.zi))
@@ -304,8 +294,6 @@ ggplot(pred.ucount,aes(x=site, y=pred.ucount, colour=trap_type)) + geom_point(sh
   ylab(ylb)+
   xlab("Sites") 
 
-
-
 ## abundamce vs month
 
 meancountS <- pred.ucount %>%
@@ -317,9 +305,7 @@ abundco2S <-meancountS[which(meancountS$trap_type=="co2"), ]  ##CO2 traps
 
 abundgravidS <-meancountS[which(meancountS$trap_type=="gravid"), ]  ##Gravid traps
 
-
 ##REAL COUNT
-
 realcountS <- real.count %>%
   dplyr::group_by(monthf, trap_type) %>%
   summarise(observed = mean(m, na.rm = T))
@@ -327,7 +313,6 @@ realcountS <- real.count %>%
 realco2S <-realcountS[which(realcountS$trap_type=="co2"), ]  ## CO2 traps
 
 realgravidS <-realcountS[which(realcountS$trap_type=="gravid"), ]  ##Gravid traps
-
 
 ##Abundance by month plots
 
