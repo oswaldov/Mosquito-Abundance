@@ -13,15 +13,10 @@ library(tidyverse)
 
 
 ## Load malaria-climate data sets
-
 mosqcountcx <-read.csv("data/TrainDataCx.csv", header=TRUE)
-head(mosqcountcx,3)
-
 test_Data <- read.csv("data/TestDataCx.csv", header=TRUE)
-head(test_Data,3)
 
 ## Be sure year and month are factors
-
 mosqcountcx$year <- as.factor(mosqcountcx$year)
 mosqcountcx$month <- as.factor(mosqcountcx$month)
 
@@ -29,7 +24,6 @@ test_Data$year <- as.factor(test_Data$year)
 test_Data$month <- as.factor(test_Data$month)
 
 ## Preliminary visualizations
-
 par(mfrow=c(2,2))
 plot(mosqcountcx$site, mosqcountcx$Cxpa)
 plot(mosqcountcx$season, mosqcountcx$Cxpa)
@@ -60,7 +54,6 @@ summary(mosqcount[,temp])
 pairs(mosqcount[,temp])
 
 ## Selection of variables of interest
-
 preds<-c("Cxpa")
 geo <- c("site","trap_type","month") 
 loc <- c("elevation","distance")
@@ -68,12 +61,10 @@ precip <- c("precip","preciplag1","preciplag2")
 temp <- c("tmean","tmax","tmin")
 tempmean <- c("tmean","tmeanlag1","tmeanlag2") 
 
-
 all<- c(preds, geo, loc, precip, tempmean)
 
-
 dataCX <- mosqcountcx[,all]
-head(dataCX)
+
 
 ## Train data
 dataTrain <- mosqcountcx[,c(1,2,6,12,14,15,16,17,18)]
@@ -94,7 +85,6 @@ plotcp(f.null) ## use this to decide on a cp/size for trimming the tree
 printcp(f.null)
 graphics.off()
 
-
 x11()
 par(mfrow=c(1,1))
 
@@ -110,13 +100,11 @@ plotcp(f.null)
 CP.new <- f.null$cptable[which.min(f.null$cptable[,"xerror"]),"CP"]
 CP.new
 
-
 ## now trimming based on the above
 cnt<-rpart.control(minsplit=MS, cp=CP.new, xval=100)
 f<-rpart(Cxpa ~  . , data=dataTrain, method="class", control=cnt)
 plotcp(f)
 graphics.off()
-
 
 x11()
 par(mfrow=c(1,1))
@@ -132,24 +120,11 @@ library(e1071)
 library(gridExtra)
 library(randomForest)
 
-
 preds.rpart = predict(f,newdata = dataTest,type = "class")
 CrossTable(dataTest$Cxpa,preds.rpart,chisq = F,prop.r = F,prop.c = F,prop.t = F,prop.chisq = F)
 
-((2800 + 651)/nrow(dataTest))*100
-
-PrecisionS <- 651/973 ; PrecisionS
-
-RecallS <- 651/1145 ; RecallS
-
-F1S <- 2 * ((67*57)/(67+57)) ; F1S
-
-
 ## here's what rpart gives for its trimmed tree if I don't include a
 ## controler
-
-head(dataTrain,2)
-
 par(mfrow=c(1,1))
 f.d<-rpart(Cxpa ~  . , method="class", data=dataTrain)
 printcp(f.d)
@@ -161,16 +136,13 @@ rpart.plot(f.d,type=4, extra=104, box.palette = "GnBu",branch.lty=3,shadow.col="
 
 ## GLM model
 ##models
-
 m.null<- glm(Cxpa ~ 1, family="binomial", data=dataTrain) ## only intercept model
 m.null
 m.full<- glm(Cxpa ~ . + tmean * precip, family="binomial", data=dataTrain)
 m.full
 
-
 modelcxS<- step(m.null, scope=formula(m.full), direction="both", criterion = "BIC")
 summary(modelcxS)
-
 
 bestmodel <- glm(Cxpa ~ site + trap_type + month + tmean + preciplag2 + precip + preciplag1 + 
                    tmean*precip, family = "binomial", data = dataTrain)
@@ -178,7 +150,6 @@ bestmodel <- glm(Cxpa ~ site + trap_type + month + tmean + preciplag2 + precip +
 summary(bestmodel)
 
 ##validation using data test
-
 predict <- predict(bestmodel, dataTest, type = 'response')
 # confusion matrix
 table_mat <- table(dataTest$Cxpa, predict > 0.5)
@@ -188,28 +159,15 @@ table_mat
 accuracy_Test <- sum(diag(table_mat)) / sum(table_mat)
 accuracy_Test
 
-precGLM <- 531/805 ; precGLM
-
-recallGLM <- 531/1145 ; recallGLM
-
-F1GLM <- 2 * ((66*46)/(66+46)) ; F1GLM
-
-
 ## Q-Q plots for residuals test
-
 qr2<- qresiduals(modelcxS)
 length(qr2)
 summary(qr2)
-
-
 
 par(mfrow=c(1,1))
 qqnorm(qr2, ylim = c(-6,6), xlim=c(-5,5), main = "Normal Q-Q Plot", las=1, bty="o"); qqline(qr2)
 
 legend(3, 6.8, "B", cex = 2.5, box.lty = 0, bg = "transparent") 
-
-
-
 
 
 ## Plot for the diferent variables using fitted values from the best model
@@ -351,7 +309,6 @@ lines(seq(0, 1200, by=10), y.f2$fit, col=4, lwd=3)
 legend(x=1050, y=1.2, legend="C", xpd = NA, bty="n", cex = 2.2)
 
 
-
 ## Precipitation_lag2
 
 ##using GLM
@@ -394,8 +351,6 @@ lines(seq(0, 1200, by=10), y.f2$fit, col=4, lwd=3)
 ##legend for the whole graph
 legend(x=1050, y=1.2, legend="D", xpd = NA, bty="n", cex = 2.2)
 
-
-
 ##Distance to anthropogenic features
 
 ##Using GLM
@@ -419,7 +374,6 @@ y.m2$fit
 
 ##lines(dat$bio09[o]/10, y.sym, col=2, lwd=3)
 lines(seq(0,2500, by=100), y.m2$fit, col=2, lwd=3)
-
 
 ## lets try it with the tree
 f.pred<-predict(f, type="vector")
