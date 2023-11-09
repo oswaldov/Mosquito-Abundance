@@ -1,0 +1,1706 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<metadata>
+  <idinfo>
+    <citation>
+      <citeinfo>
+        <origin>Katherine M. McClure, U.S. Geological Survey, Pacific Island Ecosystems Research Center</origin>
+        <origin>Rick J. Camp, U.S. Geological Survey, Pacific Island Ecosystems Research Center</origin>
+        <origin>Dennis A. LaPointe, U.S. Geological Survey, Pacific Island Ecosystems Research Center</origin>
+        <origin>Patrick Hart, University of Hawaii at Hilo</origin>
+        <origin>Bethany Woodworth, University of New England</origin>
+        <origin>Lucas Berio Fortini, U.S. Geological Survey, Pacific Island Ecosystems Research Center</origin>
+        <pubdate>Unknown</pubdate>
+        <title> Island of Hawaii bird, mosquito, and avian malaria infection data 2001-2004 </title>
+        <geoform>tabular digital data</geoform>
+        <onlink>https://doi.org/10.5066/P95LVJIC </onlink>
+      </citeinfo>
+    </citation>
+    <descript>
+      <abstract>This data publication contains data files collected as part of a field, laboratory, and modeling effort aimed at uncovering ecological drivers of avian malaria transmission and impacts on Hawaiian honeycreepers across an elevational gradient on the eastern flank of Mauna Loa and Kilauea volcanoes on Hawaii Island. From 2001-2004, mosquito and bird data were collected at nine sites ranging 25 to 1,800 m above sea level. This data publication includes site and sampling coordinate data, mosquito capture data, mosquito avian malaria infection data, and point-transect distance sampling data. Site coordinate data consists of GPS spatial location data of sampling points where mosquitoes were captured and birds were surveyed to estimate abundance, comprising 45 points per site at 100 m intervals along five transects spaced 200 m apart. Mosquito capture data consists of counts of mosquitoes captured per trap night during 4-9 trapping nights per site per month over the study period. Mosquito infection data comprises avian malaria diagnostic data for a subset of captured mosquitoes that were dissected and malaria infection determined by microscopic examination of mosquito midguts and salivary glands. Point-transect distance sampling data consists of quarterly bird survey data in which observers recorded the horizontal distance of each sampling point to birds detected by sight and sound during 8-minute counts. </abstract>
+      <purpose>These data were collected as part of a National Science Foundation Biocomplexity grant entitled the "Biocomplexity of Introduced Avian Diseases in Hawaii: Threats to Biodiversity of Native Forest Ecosystems". This work aimed to characterize mosquito-borne avian disease transmission and impacts on native Hawaiian birds using field-collected bird, mosquito, and mosquito-borne avian disease data.</purpose>
+    </descript>
+    <timeperd>
+      <timeinfo>
+        <rngdates>
+          <begdate>20010627</begdate>
+          <enddate>20041221</enddate>
+        </rngdates>
+      </timeinfo>
+      <current>ground condition</current>
+    </timeperd>
+    <status>
+      <progress>Complete</progress>
+      <update>None planned</update>
+    </status>
+    <spdom>
+      <descgeog>Biocomplexity Study Area</descgeog>
+      <bounding>
+        <westbc>-155.3337</westbc>
+        <eastbc>-154.8616</eastbc>
+        <northbc>19.6165</northbc>
+        <southbc>19.3983</southbc>
+      </bounding>
+    </spdom>
+    <keywords>
+      <theme>
+        <themekt>ISO 19115 Topic Category</themekt>
+        <themekey>biota</themekey>
+      </theme>
+      <theme>
+        <themekt>None</themekt>
+        <themekey>avian malaria</themekey>
+        <themekey>Hawaiian honeycreepers		</themekey>
+        <themekey>Culex quinquefasciatus</themekey>
+        <themekey>vector-borne disease</themekey>
+        <themekey>Plasmodium relictum</themekey>
+        <themekey>parasite</themekey>
+      </theme>
+      <theme>
+        <themekt>USGS Thesaurus</themekt>
+        <themekey>wildlife disease</themekey>
+        <themekey>USGS-EMA-LOW Fish and Wildlife Disease</themekey>
+        <themekey>disease vectors</themekey>
+        <themekey>native species</themekey>
+        <themekey>invasive species</themekey>
+      </theme>
+      <place>
+        <placekt>None</placekt>
+        <placekey>Hawaii Island</placekey>
+        <placekey>Waiakea Forest Reserve</placekey>
+        <placekey>Puu Kaliu</placekey>
+        <placekey>Malama Ki Forest Reserve</placekey>
+        <placekey>Nanawale Forest Reserve</placekey>
+        <placekey>Hawaii Volcanoes National Park Olaa Tract</placekey>
+        <placekey>Kamehameha Schools Bishop Estates, Keauhou </placekey>
+      </place>
+      <place>
+        <placekt>Common geographic areas</placekt>
+        <placekey>Hawaii</placekey>
+        <placekey>Hawaii Volcanoes National Park</placekey>
+        <placekey>Volcano</placekey>
+      </place>
+    </keywords>
+    <taxonomy>
+      <keywtax>
+        <taxonkt>None</taxonkt>
+        <taxonkey>Culex quinquefasciatus</taxonkey>
+        <taxonkey>Hawaiian Honeycreepers</taxonkey>
+        <taxonkey>Apicomplexa</taxonkey>
+      </keywtax>
+      <taxoncl>
+        <taxonrn>Domain</taxonrn>
+        <taxonrv>Eukaryota</taxonrv>
+        <taxoncl>
+          <taxonrn>Kingdom</taxonrn>
+          <taxonrv>Animalia</taxonrv>
+          <common>animals</common>
+          <taxoncl>
+            <taxonrn>Subkingdom</taxonrn>
+            <taxonrv>Bilateria</taxonrv>
+            <taxoncl>
+              <taxonrn>Infrakingdom</taxonrn>
+              <taxonrv>Protostomia</taxonrv>
+              <taxoncl>
+                <taxonrn>Superphylum</taxonrn>
+                <taxonrv>Ecdysozoa</taxonrv>
+                <taxoncl>
+                  <taxonrn>Phylum</taxonrn>
+                  <taxonrv>Arthropoda</taxonrv>
+                  <common>arthropods</common>
+                  <taxoncl>
+                    <taxonrn>Subphylum</taxonrn>
+                    <taxonrv>Hexapoda</taxonrv>
+                    <common>hexapods</common>
+                    <taxoncl>
+                      <taxonrn>Class</taxonrn>
+                      <taxonrv>Insecta</taxonrv>
+                      <common>insects</common>
+                      <taxoncl>
+                        <taxonrn>Subclass</taxonrn>
+                        <taxonrv>Pterygota</taxonrv>
+                        <common>winged insects</common>
+                        <taxoncl>
+                          <taxonrn>Infraclass</taxonrn>
+                          <taxonrv>Neoptera</taxonrv>
+                          <common>modern, wing-folding insects</common>
+                          <taxoncl>
+                            <taxonrn>Superorder</taxonrn>
+                            <taxonrv>Holometabola</taxonrv>
+                            <taxoncl>
+                              <taxonrn>Order</taxonrn>
+                              <taxonrv>Diptera</taxonrv>
+                              <common>gnats</common>
+                              <common>mosquitoes</common>
+                              <common>true flies</common>
+                              <taxoncl>
+                                <taxonrn>Suborder</taxonrn>
+                                <taxonrv>Nematocera</taxonrv>
+                                <common>long-horned flies</common>
+                                <taxoncl>
+                                  <taxonrn>Infraorder</taxonrn>
+                                  <taxonrv>Culicomorpha</taxonrv>
+                                  <taxoncl>
+                                    <taxonrn>Family</taxonrn>
+                                    <taxonrv>Culicidae</taxonrv>
+                                    <common>mosquitoes</common>
+                                    <taxoncl>
+                                      <taxonrn>Subfamily</taxonrn>
+                                      <taxonrv>Culicinae</taxonrv>
+                                      <taxoncl>
+                                        <taxonrn>Tribe</taxonrn>
+                                        <taxonrv>Culicini</taxonrv>
+                                        <taxoncl>
+                                          <taxonrn>Genus</taxonrn>
+                                          <taxonrv>Culex</taxonrv>
+                                          <common>Typical Mosquito</common>
+                                          <taxoncl>
+                                            <taxonrn>Subgenus</taxonrn>
+                                            <taxonrv>Culex (Culex)</taxonrv>
+                                            <taxoncl>
+                                              <taxonrn>Species</taxonrn>
+                                              <taxonrv>Culex quinquefasciatus</taxonrv>
+                                              <common>southern house mosquito</common>
+                                              <common>TSN: 126490</common>
+                                            </taxoncl>
+                                          </taxoncl>
+                                        </taxoncl>
+                                      </taxoncl>
+                                    </taxoncl>
+                                  </taxoncl>
+                                </taxoncl>
+                              </taxoncl>
+                            </taxoncl>
+                          </taxoncl>
+                        </taxoncl>
+                      </taxoncl>
+                    </taxoncl>
+                  </taxoncl>
+                </taxoncl>
+              </taxoncl>
+            </taxoncl>
+            <taxoncl>
+              <taxonrn>Infrakingdom</taxonrn>
+              <taxonrv>Deuterostomia</taxonrv>
+              <taxoncl>
+                <taxonrn>Phylum</taxonrn>
+                <taxonrv>Chordata</taxonrv>
+                <common>chordates</common>
+                <taxoncl>
+                  <taxonrn>Subphylum</taxonrn>
+                  <taxonrv>Vertebrata</taxonrv>
+                  <common>vertebrates</common>
+                  <taxoncl>
+                    <taxonrn>Infraphylum</taxonrn>
+                    <taxonrv>Gnathostomata</taxonrv>
+                    <taxoncl>
+                      <taxonrn>Superclass</taxonrn>
+                      <taxonrv>Tetrapoda</taxonrv>
+                      <taxoncl>
+                        <taxonrn>Class</taxonrn>
+                        <taxonrv>Aves</taxonrv>
+                        <common>Birds</common>
+                        <taxoncl>
+                          <taxonrn>Order</taxonrn>
+                          <taxonrv>Passeriformes</taxonrv>
+                          <common>Perching Birds</common>
+                          <taxoncl>
+                            <taxonrn>Family</taxonrn>
+                            <taxonrv>Fringillidae</taxonrv>
+                            <common>Old World Finches</common>
+                            <common>Finches</common>
+                            <common>Hawaiian Honeycreepers</common>
+                          </taxoncl>
+                        </taxoncl>
+                      </taxoncl>
+                    </taxoncl>
+                  </taxoncl>
+                </taxoncl>
+              </taxoncl>
+            </taxoncl>
+          </taxoncl>
+        </taxoncl>
+        <taxoncl>
+          <taxonrn>Kingdom</taxonrn>
+          <taxonrv>Protozoa</taxonrv>
+          <taxoncl>
+            <taxonrn>Phylum</taxonrn>
+            <taxonrv>Apicomplexa</taxonrv>
+            <common>TSN: 553099</common>
+          </taxoncl>
+        </taxoncl>
+      </taxoncl>
+    </taxonomy>
+    <accconst>None.  Please see 'Distribution Info' for details.</accconst>
+    <useconst>None.  These data were collected using funding from the U.S. Government and can be used without additional permissions or fees. Users are advised to read the dataset's metadata thoroughly to understand appropriate use and data limitations. </useconst>
+    <ptcontac>
+      <cntinfo>
+        <cntperp>
+          <cntper>Katherine M. McClure</cntper>
+          <cntorg>U.S. Geological Survey Pacific Island Ecosystem Research Center</cntorg>
+        </cntperp>
+        <cntpos>Research Ecologist</cntpos>
+        <cntaddr>
+          <addrtype>physical</addrtype>
+          <address>Bldg. 344, Crater Rim Drive</address>
+          <city>Hawaii National Park </city>
+          <state>Hawaii </state>
+          <postal>96718</postal>
+          <country>USA</country>
+        </cntaddr>
+        <cntvoice>808-985-6413</cntvoice>
+        <cntemail>kmcclure@usgs.gov</cntemail>
+      </cntinfo>
+    </ptcontac>
+    <datacred>This study was supported by the National Science Foundation Division of Environmental Biology  Biocomplexity Grant 0083944 and by the U.S. Geological Survey Invasive Species and Wildlife and Terrestrial Resources program. </datacred>
+    <crossref>
+      <citeinfo>
+        <origin>Bethany L. Woodworth</origin>
+        <origin>Carter T. Atkinson</origin>
+        <origin>Dennis A. LaPointe</origin>
+        <origin>Patrick J. Hart</origin>
+        <origin>Caleb S. Spiegel</origin>
+        <origin>Erik J. Tweed</origin>
+        <origin>Carlene Henneman</origin>
+        <origin>Jaymi LeBrun</origin>
+        <origin>Tami Denette</origin>
+        <origin>Rachel DeMots</origin>
+        <origin>Kelly L. Kozar</origin>
+        <origin>Dennis Triglia</origin>
+        <origin>Dan Lease</origin>
+        <origin>Aaron Gregor</origin>
+        <origin>Tom Smith</origin>
+        <origin>David Duffy</origin>
+        <pubdate>20050124</pubdate>
+        <title>Host population persistence in the face of introduced vector-borne diseases: Hawaii amakihi and avian malaria</title>
+        <geoform>publication</geoform>
+        <serinfo>
+          <sername>Proceedings of the National Academy of Sciences</sername>
+          <issue>vol. 102, issue 5</issue>
+        </serinfo>
+        <pubinfo>
+          <pubplace>n/a</pubplace>
+          <publish>Proceedings of the National Academy of Sciences</publish>
+        </pubinfo>
+        <othercit>ppg. 1531-1536</othercit>
+        <onlink>https://doi.org/10.1073/pnas.0409454102</onlink>
+      </citeinfo>
+    </crossref>
+    <crossref>
+      <citeinfo>
+        <origin>Michael D. Samuel</origin>
+        <origin>Peter H. F. Hobbelen</origin>
+        <origin>Francisco DeCastro</origin>
+        <origin>Jorge A. Ahumada</origin>
+        <origin>Dennis A. LaPointe</origin>
+        <origin>Carter T. Atkinson</origin>
+        <origin>Bethany L. Woodworth</origin>
+        <origin>Patrick J. Hart</origin>
+        <origin>David C. Duffy</origin>
+        <pubdate>201112</pubdate>
+        <title>The dynamics, transmission, and population impacts of avian malaria in native Hawaiian birds: a modeling approach</title>
+        <geoform>publication</geoform>
+        <serinfo>
+          <sername>Ecological Applications</sername>
+          <issue>vol. 21, issue 8</issue>
+        </serinfo>
+        <pubinfo>
+          <pubplace>n/a</pubplace>
+          <publish>Wiley</publish>
+        </pubinfo>
+        <othercit>ppg. 2960-2973</othercit>
+        <onlink>https://doi.org/10.1890/10-1311.1</onlink>
+      </citeinfo>
+    </crossref>
+    <crossref>
+      <citeinfo>
+        <origin>Patrick J. Hart</origin>
+        <origin>Bethany L. Woodworth</origin>
+        <origin>Richard J. Camp</origin>
+        <origin>Kathryn Turner</origin>
+        <origin>Katherine McClure</origin>
+        <origin>Katherine Goodall</origin>
+        <origin>Carlene Henneman</origin>
+        <origin>Caleb Spiegel</origin>
+        <origin>Jaymi LeBrun</origin>
+        <origin>Erik Tweed</origin>
+        <origin>Michael Samuel</origin>
+        <pubdate>20110101</pubdate>
+        <title>Temporal Variation in Bird and Resource Abundance Across an Elevational Gradient in Hawaii</title>
+        <geoform>publication</geoform>
+        <serinfo>
+          <sername>The Auk</sername>
+          <issue>vol. 128, issue 1</issue>
+        </serinfo>
+        <pubinfo>
+          <pubplace>n/a</pubplace>
+          <publish>Oxford University Press (OUP)</publish>
+        </pubinfo>
+        <othercit>ppg. 113-126</othercit>
+        <onlink>https://doi.org/10.1525/auk.2011.10031</onlink>
+      </citeinfo>
+    </crossref>
+  </idinfo>
+  <dataqual>
+    <attracc>
+      <attraccr>Initial data entry and visual data checking of bird and mosquito data was conducted by field crews and supervised by field technicians and personnel. These data were then secondarily checked and cleaned using standard data science techniques by USGS-PIERC and Hawaii Cooperative Studies Unit personnel. </attraccr>
+    </attracc>
+    <logic>The data are logically consistent. The consistency was verified as part of the quality assurance that occurred during data analysis. </logic>
+    <complete>For the mosquito count data, we omitted data from gravid and CO2 traps that were either not functioning or were intentionally disabled or stolen. There are no missing data or omissions in the coordinate, count, or mosquito infection data.</complete>
+    <posacc>
+      <horizpa>
+        <horizpar>Spatial coordinates of sampling points were obtained using a handheld Garmin GPS units, with a positional accuracy of approximately 30m.</horizpar>
+      </horizpa>
+      <vertacc>
+        <vertaccr>Spatial coordinates of sampling points were obtained using a handheld Garmin GPS unit, with a positional accuracy of approximately 30m.</vertaccr>
+      </vertacc>
+    </posacc>
+    <lineage>
+      <procstep>
+        <procdesc>We established nine 1km2 forested sites on the eastern flank of Mauna Loa and Kilauea volcanoes on the southeast corner of Hawaii Island (Woodworth et al. 2005, Samuel et al. 2011). Sites spanned a 1775 m elevational gradient, comprising three low elevation sites (&lt;300 m), four mid-elevation sites (1,000-1,300 m), and two high-elevation sites (&gt; 1,650 m). Each site contained five 1-km-long transects spaced 200m apart. On each transect, nine sampling points were established, each 100 m apart. All sites were located in secondary or primary forests dominated by native ohia trees (Meterosideros polymorpha) and a mix of native and introduced trees, shrubs, and ferns.  
+
+References: 
+Samuel, M. D., P. H. F. Hobbelen, F. DeCastro, J. A. Ahumada, D. A. LaPointe, C. T. Atkinson, B. L. Woodworth, P. J. Hart, and D. C. Duffy. 2011. The dynamics, transmission, and population impacts of avian malaria in native Hawaiian birds: a modeling approach. Ecological Applications 21:2960–2973. 
+Woodworth, B. L., C. T. Atkinson, D. A. Lapointe, P. J. Hart, C. S. Spiegel, E. J. Tweed, C. Henneman, J. Lebrun, T. Denette, R. Demots, K. L. Kozar, D. Triglia, D. Lease, A. Gregor, T. Smith, and D. Duffy. 2005. Host population persistence in the face of introduced vector-borne diseases: Hawaii amakihi and avian malaria. Proceedings of the National Academy of Sciences of the USA 102:1531–6. </procdesc>
+        <procdate>2001</procdate>
+      </procstep>
+      <procstep>
+        <procdesc>We collected mosquitoes from February 2002 – December 2004 using Centers for Disease Control (CDC) light traps and oviposition (gravid) traps that target host-seeking and egg-laying females, respectively. Light traps were baited with approximately 300g of dry ice (CO2) and hung in trees at 4-12 m depending on forest canopy height (Sudia and Chamberlain 1967). Gravid traps were baited with alfalfa-infused water and traps placed on the forest floor (Reiter 1983, Bentley and Day 1989). We deployed a pair of light and gravid traps at 25 sampling locations per site at 4- to 6-week intervals. Sampling occurred for 4-9 nights of trapping per month, with traps set before sunset and mosquitoes collected the following morning. Captured Culex and Wyeomyia mosquitoes were identified to species and Aedes spp identified to genus by trained personnel in the field. Mosquitoes were counted and transported alive in holding cups to a laboratory, where Cx. quinquefasciatus mosquitoes were kept alive with a sucrose solution until dissection. 
+
+We conducted quarterly bird surveys at each site from March 2002 – December 2004 using point-transect distance sampling methods (Buckland et al. 2015, Hart et al. 2011). Counts were conducted at 25 stations located 200 m apart between 5:30 – 11am on a quarterly, or per season, basis. Observers estimated the horizontal distance from the sampling center point to individual birds that were detected visually or aurally. Observers also recorded the time of sampling, species, detection type (heard, seen, or both). Estimates for cloud cover, rain intensity, and wind and gust speed were also recorded, and surveys halted when sampling conditions exceeded light rain and/or wind and gust strength &gt; 3 on the Beaufort scale.  We categorized each species detected as one of three avian guilds—native, non-native, and gamebirds. Native birds included all Hawaiian endemic passerines and indigenous species. Gamebirds consisted of all Phasianidae (e.g. pheasants, grouse, etc.), and all other introduced bird species were categorized as non-natives. 
+
+References:
+Bentley, M. D., and J. F. Day. 1989. Chemical ecology and behavioral aspects of mosquito oviposition. Annual Review of Entomology 34:401–421. 
+Buckland, S., E. Rexstad, T. Marques, and C. Oedekoven. 2015. Distance sampling: Methods and applications. Springer, London, UK. 
+Hart, P. J., B. L. Woodworth, R. J. Camp, K. Turner, K. McClure, K. Goodall, C. Henneman, C. Spiegel, J. LeBrun, E. Tweed, and M. Samuel. 2011. Temporal variation in bird and resource abundance across an elevational gradient in Hawaii. Auk 128:113–126. 
+Reiter, P. 1983. A portable, battery-operated trap for collecting gravid Culex mosquitoes. Mosquito News 43:496–498. 
+Sudia, W. D., and R. W. Chamberlain. 1967. Collection and processing of medically important arthropods for arbovirus isolation. Page Center for Disease Control. Atlanta, GA. </procdesc>
+        <procdate>2004</procdate>
+      </procstep>
+      <procstep>
+        <procdesc>Individual live-captured Culex quinquefasciatus were killed and dissected using standard techniques for identifying malaria infections in the midgut and salivary glands of mosquito vectors (Shute and Maryon 1960, World Health Organization 1975). Oocysts on the outer surface of the mosquito gut wall in infected mosquitoes were categorized by stage and counted as a measure of midgut infection intensity (small; medium; sporulated, i.e., containing differentiated sporozoites; ruptured; degenerating). We dissected the salivary glands and in infected mosquitoes ranked sporozoite intensity according to the number of sporozoites found within a 450x dissecting microscope field. Parity of the female mosquitoes was assessed and categorized as nulliparous (never laid eggs), parous (laid at least one egg raft), or gravid (with eggs) (Detinova et al. 1962). A wing was measured from each mosquito using a binocular microscope equipped with an ocular micrometer and was defined as the distance from the alular notch to the apical margin, excluding scale fringe. 
+
+References: 
+Detinova, T. S., D. S. Bertram, and World Health Organization(WHO). 1962. Age-grouping methods in Diptera of medical importance, with special reference to some vectors of malaria. Page World Health Organization Monograph Series. 
+Shute, P., and M. Maryon. 1960. Laboratory technique for the study of malaria. J&amp;A Churchill Ltd., London. 
+World Health Organization. 1975. Manual on practical entomology in malaria. </procdesc>
+        <procdate>2004</procdate>
+      </procstep>
+    </lineage>
+  </dataqual>
+  <eainfo>
+    <detailed>
+      <enttyp>
+        <enttypl>Biocomplexity_mosquito capture data.csv</enttypl>
+        <enttypd>Comma Separated Value (CSV) file containing data.</enttypd>
+        <enttypds>Producer Defined</enttypds>
+      </enttyp>
+      <attr>
+  <attrlabl>site</attrlabl><attrdef>unique identifier of 1km2 study areas where data were collected. </attrdef><attrdefs>Producer Defined</attrdefs><attrdomv>
+    <edom>
+      <edomv>BRY</edomv>
+      <edomvd>Bryson’s Cinder Cone, Puu Kaliu,  Leilani Estates</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>CJR</edomv>
+      <edomvd>CJ Ralph, Kamehameha Schools Bishop Estates, Keauhou</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>COO</edomv>
+      <edomvd>Cooper Center, Volcano Village</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>CRA</edomv>
+      <edomvd>Crater Rim, Hawaii Volcanoes National Park</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>MAL</edomv>
+      <edomvd>Malama Ki Forest Reserve</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>NAN</edomv>
+      <edomvd>Nanawale Forest Reserve</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>PUU</edomv>
+      <edomvd>Pu'u Unit, Ola'a Tract of Hawaii Volcanoes National Park</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>SOL</edomv>
+      <edomvd>Solomon’s Watering Hole, Kamehameha Schools Bishop Estates, Keauhou</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>WAI</edomv>
+      <edomvd>Waiakea Forest Reserve</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+</attr>
+      <attr>
+        <attrlabl>station</attrlabl>
+        <attrdef>One of nine points along each transect where mosquitoes were captured. Each station was spaced 100m apart along each transect. No stations occurred at the transect endpoints</attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv><rdom>
+            <rdommin>100</rdommin>
+            <rdommax>900</rdommax>
+            <attrunit>dimensionless</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>transect</attrlabl>
+        <attrdef>One of five 1-km transects within each 1 km2 study grid, each spaced 200m apart </attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv><rdom>
+            <rdommin>0</rdommin>
+            <rdommax>800</rdommax>
+            <attrunit>dimensionless</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>session</attrlabl>
+        <attrdef>Unique alphanumeric identifier of site and number of capture periods that signified the number of monthly mosquito sampling bouts or periods at each site. Each sampling period consisted of multiple nights of mosquito sampling.</attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv><udom>alphanumeric value: site abbreviation + ordered number of mosquito sampling period</udom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>date</attrlabl>
+        <attrdef>Date of mosquito capture. Trap operation started on the afternoon of the capture date and ended the following morning when mosquitoes were collected.  </attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv><rdom>
+            <rdommin>02/05/2002</rdommin>
+            <rdommax>12/21/2004</rdommax>
+            <attrunit>mm/dd/yyyy</attrunit>
+            <attrmres>1</attrmres>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+  <attrlabl>trap_type</attrlabl><attrdef>One of two adult-targeting baited mosquito traps (CO2 or gravid) </attrdef><attrdefs>Producer Defined</attrdefs><attrdomv>
+    <edom>
+      <edomv>co2</edomv>
+      <edomvd>Centers for Disease Control (CDC) light trap, baited with approximately 300g of dry ice (CO2) and hung in trees at 4-12 m depending on forest canopy height.</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>gravid</edomv>
+      <edomvd>CDC gravid trap (JW Hock Company) baited with alfalfa-infused water.</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+</attr>
+      <attr>
+        <attrlabl>culex</attrlabl>
+        <attrdef>Total number of adult female Culex quinquefasciatus in trap</attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv><rdom>
+            <rdommin>0</rdommin>
+            <rdommax>94</rdommax>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>aedes</attrlabl>
+        <attrdef>Total number of adult female Aedes spp. in trap </attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv><rdom>
+            <rdommin>0</rdommin>
+            <rdommax>358</rdommax>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>wyeomyia</attrlabl>
+        <attrdef>Total number of adult female Wyeomyia mitchelli in trap </attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv><rdom>
+            <rdommin>0</rdommin>
+            <rdommax>46</rdommax>
+          </rdom>
+        </attrdomv>
+      </attr>
+    </detailed>
+    <detailed>
+      <enttyp>
+        <enttypl>Biocomplexity_mosquito avian malaria infection and parity data.csv</enttypl>
+        <enttypd>Comma Separated Value (CSV) file containing data.</enttypd>
+        <enttypds>Producer Defined</enttypds>
+      </enttyp>
+      <attr>
+  <attrlabl>site</attrlabl><attrdef>unique identifier of 1km2 study areas where data were collected. </attrdef><attrdefs>Producer Defined</attrdefs><attrdomv>
+    <edom>
+      <edomv>WAI</edomv>
+      <edomvd>Waiakea Forest Reserve</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>MAL</edomv>
+      <edomvd>Malama Ki Forest Reserve</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>BRY</edomv>
+      <edomvd>Bryson's Cinder Cone, Puu Kaliu, Leilani Estates</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>NAN</edomv>
+      <edomvd>Nanawale Forest Reserve</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>PUU</edomv>
+      <edomvd>Puu Unit, Ola'a Tract of Hawaii Volcanoes National Park</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>COO</edomv>
+      <edomvd>Cooper Center, Volcano Village</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>CRA</edomv>
+      <edomvd>Crater Rim, Hawaii Volcanoes National Park</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>CJR</edomv>
+      <edomvd>CJ Ralph, Kamehameha Schools Bishop Estates, Keauhou</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>SOL</edomv>
+      <edomvd>Solomon's Watering Hole, Kamehameha Schools Bishop Estates, Keauhou</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+</attr>
+      <attr>
+        <attrlabl>station</attrlabl>
+        <attrdef>One of nine points along each transect where sampling occurred. Each station was spaced 100m apart along each transect. No stations occurred at the transect endpoints.</attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv><rdom>
+            <rdommin>100</rdommin>
+            <rdommax>900</rdommax>
+            <attrunit>dimensionless</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>transect</attrlabl>
+        <attrdef>One of five 1-km transects within each 1 km2 study grid. Each transect was spaced 200m apart.</attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv><rdom>
+            <rdommin>0</rdommin>
+            <rdommax>800</rdommax>
+            <attrunit>dimensionless</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+  <attrlabl>trap_type</attrlabl><attrdef>One of two adult-targeting baited mosquito traps (CO2 or gravid)  </attrdef><attrdefs>Producer Defined</attrdefs><attrdomv>
+    <edom>
+      <edomv>co2</edomv>
+      <edomvd>Centers for Disease Control (CDC) light trap, baited with approximately 300g of dry ice (CO2) and hung in trees at 4-12 m depending on forest canopy height.</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>gravid</edomv>
+      <edomvd>CDC gravid trap (JW Hock Company) baited with alfalfa-infused water.</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+</attr>
+      <attr>
+        <attrlabl>date_collected</attrlabl>
+        <attrdef>The date of mosquito capture. Represents the hours of trap operation starting on the afternoon of the capture date and ending on the morning of the following day when mosquitoes were collected.  </attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv><rdom>
+            <rdommin>06/27/2001</rdommin>
+            <rdommax>12/19/2004</rdommax>
+            <attrunit>mm/dd/yyyy</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>date_dissected</attrlabl>
+        <attrdef>The date when mosquitoes were dissected. </attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv>
+          <edom>
+  <edomv>NA</edomv>
+  <edomvd>Date not recorded</edomvd>
+  <edomvds>Producer defined</edomvds>
+</edom>
+        </attrdomv>
+        <attrdomv><rdom>
+            <rdommin>01/07/2002</rdommin>
+            <rdommax>01/05/2005</rdommax>
+            <attrunit>mm/dd/yyyy</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+  <attrlabl>species</attrlabl><attrdef>Mosquito species dissected</attrdef><attrdefs>Producer Defined</attrdefs><attrdomv>
+    <edom>
+      <edomv>Culex</edomv>
+      <edomvd>Culex quinquefasciatus</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+</attr>
+      <attr>
+        <attrlabl>wing_length</attrlabl>
+        <attrdef>Wing length converted from MU to millimeters with the aid of a stage micrometer. </attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv>
+          <edom>
+  <edomv>ND</edomv>
+  <edomvd>No data because measurement was not taken.</edomvd>
+  <edomvds>Producer defined</edomvds>
+</edom>
+        </attrdomv>
+        <attrdomv><rdom>
+            <rdommin>28</rdommin>
+            <rdommax>115</rdommax>
+            <attrunit>millimeters </attrunit>
+            <attrmres>1mm</attrmres>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+  <attrlabl>ovary_parity</attrlabl><attrdef>Parity (i.e. whether or not a mosquito has produced a mature batch of eggs) as determined by ovarial tracheolation. Provides information on physiological age of the mosquito and gives an indication if the mosquito has had a blood meal (host contact). </attrdef><attrdefs>Producer Defined</attrdefs><attrdomv>
+    <edom>
+      <edomv>ND</edomv>
+      <edomvd>No data because the ovary was not successfully removed or prepared.</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>nulliparous</edomv>
+      <edomvd>Never having produced mature eggs. Ovarial tracheoles appear as tight bundles or skeins on the surface of ovary under 450X.</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>gravid</edomv>
+      <edomvd>Mature (fully developed) eggs present</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>parous</edomv>
+      <edomvd>Mosquito has produced at least one raft of matured eggs. Ovarial tracheoles are unwound and loose on the ovary as observed at 450X.</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+</attr>
+      <attr>
+  <attrlabl>midgut_infection</attrlabl><attrdef>Whether or not early stage parasites (oocysts) are present on the mosquito midgut as determined by Nomarski microscopy at 450 x. </attrdef><attrdefs>Producer Defined</attrdefs><attrdomv><edom>
+  <edomv>NA</edomv>
+  <edomvd>No data available. Midgut not dissected or slide preparation unreadable.</edomvd>
+  <edomvds>Producer defined</edomvds>
+</edom></attrdomv><attrdomv>
+    <edom>
+      <edomv>no</edomv>
+      <edomvd>No oocysts present in the midgut</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>yes</edomv>
+      <edomvd>Oocysts present in the midgut</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+</attr>
+      <attr>
+        <attrlabl>small_oocysts_sm</attrlabl>
+        <attrdef>The number of small oocysts with a diameter in the range of the 10-20 microns. Size was determined subjectively. </attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv><rdom>
+            <rdommin>0</rdommin>
+            <rdommax>335</rdommax>
+            <attrunit>oocysts</attrunit>
+            <attrmres>1</attrmres>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>medium_oocysts_m</attrlabl>
+        <attrdef>The number of medium oocysts with a diameter in the range of the 21-49 microns. Size was determined subjectively. </attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv><rdom>
+            <rdommin>0</rdommin>
+            <rdommax>224</rdommax>
+            <attrunit>oocysts</attrunit>
+            <attrmres>1</attrmres>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>sporulated_oocysts_l</attrlabl>
+        <attrdef>The number of large, sporulated oocysts with a diameter in the range of the 50-60 microns. Size was determined subjectively. </attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv><rdom>
+            <rdommin>0</rdommin>
+            <rdommax>250</rdommax>
+            <attrunit>oocysts</attrunit>
+            <attrmres>1</attrmres>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>ruptured_oocysts_sh</attrlabl>
+        <attrdef>The number of ruptured oocysts (shells) present on the midgut. </attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv><rdom>
+            <rdommin>0</rdommin>
+            <rdommax>100</rdommax>
+            <attrunit>oocysts</attrunit>
+            <attrmres>1</attrmres>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>degenerating_oocysts_d</attrlabl>
+        <attrdef>The number of degenerated oocysts present on the midgut. Degenerated oocysts are shrunken and melanized. </attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv><rdom>
+            <rdommin>0</rdommin>
+            <rdommax>58</rdommax>
+            <attrunit>oocysts</attrunit>
+            <attrmres>1</attrmres>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+  <attrlabl>salivary_infection</attrlabl><attrdef>salivary gland infection = whether or not infective stage parasites (sporozoites) are present in the mosquito salivary gland as determined by Nomarski microscopy at 450x.</attrdef><attrdefs>Producer Defined</attrdefs><attrdomv><edom>
+  <edomv>NA</edomv>
+  <edomvd>No Data available. Salivary gland not dissected or slide preparation unreadable.</edomvd>
+  <edomvds>Producer defined</edomvds>
+</edom></attrdomv><attrdomv>
+    <edom>
+      <edomv>no</edomv>
+      <edomvd>No sporozoites observed in the slaivary glands. Not infective.</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>yes</edomv>
+      <edomvd>Sporozoites observed in the salivary glands of the mosquito. Individual is infective.</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+</attr>
+      <attr>
+  <attrlabl>sporozoite_intensity</attrlabl><attrdef>Sporozoite intensity = subjective scale based on the number of sporozoites observed in a single microscopic field with the most sporozoites. </attrdef><attrdefs>Producer Defined</attrdefs><attrdomv><edom>
+  <edomv>NA</edomv>
+  <edomvd>No data available. Salivary gland not dissected or slide preparation unreadable.</edomvd>
+  <edomvds>Producer defined</edomvds>
+</edom></attrdomv><attrdomv>
+    <edom>
+      <edomv>0</edomv>
+      <edomvd>no sporozoites</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>1</edomv>
+      <edomvd>1-10 sporozoites</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>2</edomv>
+      <edomvd>11-50 sporozoites</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>3</edomv>
+      <edomvd>51-100 sporozoites</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>4</edomv>
+      <edomvd>&gt; 100 sporozoites</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+</attr>
+    </detailed>
+    <detailed>
+      <enttyp>
+        <enttypl>Biocomplexity_sampling station spatial coordinates.csv</enttypl>
+        <enttypd>Comma Separated Value (CSV) file containing data.</enttypd>
+        <enttypds>Producer Defined</enttypds>
+      </enttyp>
+      <attr>
+  <attrlabl>site</attrlabl><attrdef>Unique identifier of 1km2 study areas where mosquitoes were captured and bird surveys were conducted</attrdef><attrdefs>Producer Defined</attrdefs><attrdomv>
+    <edom>
+      <edomv>NAN</edomv>
+      <edomvd>Nanawale Forest Reserve</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>BRY</edomv>
+      <edomvd>Bryson’s Cinder Cone, Puu Kaliu, Leilani Estates</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>MAL</edomv>
+      <edomvd>Malama Ki Forest Reserve</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>WAI</edomv>
+      <edomvd>Waiakea Forest Reserve</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>PUU</edomv>
+      <edomvd>Pu’u Unit, Ola'a Tract of Hawaii Volcanoes National Park</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>COO</edomv>
+      <edomvd>Cooper Center, Volcano Village</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>CRA</edomv>
+      <edomvd>Crater Rim, Hawaii Volcanoes National Park</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>CJR</edomv>
+      <edomvd>CJ Ralph, Kamehameha Schools Bishop Estates, Keauhou</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>SOL</edomv>
+      <edomvd>Solomon’s Watering Hole, Kamehameha Schools Bishop Estates, Keauhou</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+</attr>
+      <attr>
+        <attrlabl>station</attrlabl>
+        <attrdef>One of nine points along each transect where sampling occurred. Each station was spaced 100m apart along each transect. </attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv><rdom>
+            <rdommin>100</rdommin>
+            <rdommax>900</rdommax>
+            <attrunit>dimensionless</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>transect</attrlabl>
+        <attrdef>One of five 1-km transects within each 1 km2 study grid. Each transect was spaced 200m apart.</attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv><rdom>
+            <rdommin>0</rdommin>
+            <rdommax>800</rdommax>
+            <attrunit>dimensionless</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>x_long</attrlabl>
+        <attrdef>Longitude of sampling station; collected using a handheld GPS unit.</attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv><rdom>
+            <rdommin>-155.3336654</rdommin>
+            <rdommax>-154.86211540000002</rdommax>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>y_lat</attrlabl>
+        <attrdef>Latitude of sampling station; collected using a handheld GPS unit.</attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv><rdom>
+            <rdommin>19.39828039</rdommin>
+            <rdommax>19.61649763</rdommax>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>elevation_m</attrlabl>
+        <attrdef>Elevation of sampling station. </attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv><rdom>
+            <rdommin>28.31</rdommin>
+            <rdommax>1836.1</rdommax>
+            <attrunit>meters</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+    </detailed>
+    <detailed>
+      <enttyp>
+        <enttypl>Biocomplexity_bird count data.csv</enttypl>
+        <enttypd>Comma Separated Value (CSV) file containing data.</enttypd>
+        <enttypds>Producer Defined</enttypds>
+      </enttyp>
+      <attr>
+  <attrlabl>site</attrlabl><attrdef>Unique identifier of 1km2 study areas where data were collected </attrdef><attrdefs>Producer Defined</attrdefs><attrdomv>
+    <edom>
+      <edomv>BRY</edomv>
+      <edomvd>Bryson’s Cinder Cone, Puu Kaliu, Leilani Estates</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>CJR</edomv>
+      <edomvd>CJ Ralph, Kamehameha Schools Bishop Estates, Keauhou</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>COO</edomv>
+      <edomvd>Cooper Center, Volcano Village</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>CRA</edomv>
+      <edomvd>Crater Rim, Hawaii Volcanoes National Park</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>MAL</edomv>
+      <edomvd>Malama Ki Forest Reserve</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>NAN</edomv>
+      <edomvd>Nanawale Forest Reserve</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>PUU</edomv>
+      <edomvd>Pu’u Unit, Ola'a Tract of Hawaii Volcanoes National Park</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>SOL</edomv>
+      <edomvd>Solomon’s Watering Hole, Kamehameha Schools Bishop Estates, Keauhou</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>WAI</edomv>
+      <edomvd>Waiakea Forest Reserve</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+</attr>
+      <attr>
+        <attrlabl>station</attrlabl>
+        <attrdef>One of nine points along each transect where surveys were conducted. Each station was spaced 100m apart along each transect. No stations occurred at the transect endpoints. </attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv><rdom>
+            <rdommin>100</rdommin>
+            <rdommax>900</rdommax>
+            <attrunit>Dimensionless</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>transect</attrlabl>
+        <attrdef>One of five 1-km transects within each 1 km2 study grid. Each transect was spaced 200m apart.</attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv><rdom>
+            <rdommin>0</rdommin>
+            <rdommax>800</rdommax>
+            <attrunit>Dimensionless</attrunit>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+  <attrlabl>alphacode</attrlabl><attrdef>Species code identifying detected bird.</attrdef><attrdefs>Producer Defined</attrdefs><attrdomv>
+    <edom>
+      <edomv>APAP</edomv>
+      <edomvd>Apapane, Himatione sanguinea</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>HAAM</edomv>
+      <edomvd>Hawaii Amakihi, Chlorodrepanis virens</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>ZEBD</edomv>
+      <edomvd>Zebra Dove, Geopelia striatara</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>MELT</edomv>
+      <edomvd>Chinese Hwamei/Melodious Laughing-thrush, Garrulax canorus</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>JAWE</edomv>
+      <edomvd>Warbling White-eye (formerly Japanese White-eye), Zosterops japonicus</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>HOFI</edomv>
+      <edomvd>House Finch, Haemorhous mexicanus</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>NOCA</edomv>
+      <edomvd>Northern Cardinal, Cardinalis cardinalis</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>SPDO</edomv>
+      <edomvd>Spotted Dove, Spilopelia chinensis</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>COMY</edomv>
+      <edomvd>Common Myna, Acridotheres tristis</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>HAEL</edomv>
+      <edomvd>Hawaii Elepaio, Chasiempis sandwichensis</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>KAPH</edomv>
+      <edomvd>Kalij Pheasant, Lophura leucomelanos</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>OMAO</edomv>
+      <edomvd>Omao, Myadestes obscurus</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>NUMA</edomv>
+      <edomvd>Nutmeg Mannikin, Lonchura punctulata</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>HWAH</edomv>
+      <edomvd>Io, Buteo solitarius</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>IIWI</edomv>
+      <edomvd>Iiwi, Vestiaria coccinea</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>WITU</edomv>
+      <edomvd>Wild Turkey, Meleagris gallopavo</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>RBLE</edomv>
+      <edomvd>Red-billed Leiothrix, Leiothrix lutea</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>HAAK</edomv>
+      <edomvd>Hawaiian Akepa, Loxops coccineus</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>AKIP</edomv>
+      <edomvd>Akiapolaau,  Hemignathus wilsoni</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>HCRE</edomv>
+      <edomvd>Alawi (formerly Hawaii Creeper), Manucerthia mana</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>REJU</edomv>
+      <edomvd>Red Junglefowl, Gallus gallus</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>NOBI</edomv>
+      <edomvd>No birds detected</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>JABW</edomv>
+      <edomvd>Japanese Bush-warbler, Horornis diphone</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+</attr>
+      <attr>
+        <attrlabl>distance</attrlabl>
+        <attrdef>Distance, measured to the nearest meter, at which a bird was detected</attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv>
+          <edom>
+  <edomv>9999</edomv>
+  <edomvd>No data recorded</edomvd>
+  <edomvds>Producer defined</edomvds>
+</edom>
+        </attrdomv>
+        <attrdomv><rdom>
+            <rdommin>0</rdommin>
+            <rdommax>240</rdommax>
+            <attrunit>meter</attrunit>
+            <attrmres>1</attrmres>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+  <attrlabl>detection_type</attrlabl><attrdef>Category of detection type</attrdef><attrdefs>Producer Defined</attrdefs><attrdomv>
+    <edom>
+      <edomv>9999</edomv>
+      <edomvd>Data not recorded</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>1</edomv>
+      <edomvd>Heard</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>2</edomv>
+      <edomvd>Seen</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>4</edomv>
+      <edomvd>Heard then seen</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>8</edomv>
+      <edomvd>Seen while off-count</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>9</edomv>
+      <edomvd>Heard while off-count</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+</attr>
+      <attr>
+        <attrlabl>effort</attrlabl>
+        <attrdef>Number of surveys conducted at the sampling point on a given survey date (1 or 2).</attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv><rdom>
+            <rdommin>1</rdommin>
+            <rdommax>2</rdommax>
+            <attrunit>number of surveys</attrunit>
+            <attrmres>1</attrmres>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+  <attrlabl>guild</attrlabl><attrdef>One of three avian guilds that characterized the detected bird: native, non-native, and gamebirds.</attrdef><attrdefs>Producer Defined</attrdefs><attrdomv><edom>
+  <edomv>NA</edomv>
+  <edomvd>No data recorded</edomvd>
+  <edomvds>Producer defined</edomvds>
+</edom></attrdomv><attrdomv>
+    <edom>
+      <edomv>ENDM</edomv>
+      <edomvd>Native birds – Native bird species, i.e. Hawaiian endemic passerines and indigenous species</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>XNTV</edomv>
+      <edomvd>Non-native birds - Non-Phasianidae introduced bird species</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>GAME</edomv>
+      <edomvd>Gamebirds – Game birds, i.e. bird species within the Phasianidae family, all introduced</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+</attr>
+      <attr>
+  <attrlabl>obscode</attrlabl><attrdef>Three-character code representing bird counters. Complete names have been withheld to maintain counter anonymity. </attrdef><attrdefs>Producer Defined</attrdefs><attrdomv>
+    <edom>
+      <edomv>PJH</edomv>
+      <edomvd>
+      </edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>RLD</edomv>
+      <edomvd>
+      </edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>CSS</edomv>
+      <edomvd>
+      </edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>JJL</edomv>
+      <edomvd>
+      </edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>JRB</edomv>
+      <edomvd>
+      </edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>EJT</edomv>
+      <edomvd>
+      </edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>CZH</edomv>
+      <edomvd>
+      </edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>KMM</edomv>
+      <edomvd>
+      </edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>KEG</edomv>
+      <edomvd>
+      </edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>SSC</edomv>
+      <edomvd>
+      </edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+</attr>
+      <attr>
+        <attrlabl>obsvdate</attrlabl>
+        <attrdef>Date when survey was conducted.</attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv><rdom>
+            <rdommin>03/06/2002</rdommin>
+            <rdommax>12/08/2004</rdommax>
+            <attrunit>mm/dd/yyyy</attrunit>
+            <attrmres>1</attrmres>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>timestart</attrlabl>
+        <attrdef>Time when the survey began.		</attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv>
+          <edom>
+  <edomv>9999</edomv>
+  <edomvd>Data not recorded</edomvd>
+  <edomvds>Producer defined</edomvds>
+</edom>
+        </attrdomv>
+        <attrdomv><rdom>
+            <rdommin>0535</rdommin>
+            <rdommax>1350</rdommax>
+            <attrunit>hh:mm</attrunit>
+            <attrmres>1</attrmres>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+        <attrlabl>cloud</attrlabl>
+        <attrdef>Percent of cloud cover (scaled linearly from 0-100 by tens)</attrdef>
+        <attrdefs>Producer Defined</attrdefs>
+        <attrdomv>
+          <edom>
+  <edomv>9999</edomv>
+  <edomvd>Data not recorded</edomvd>
+  <edomvds>Producer defined</edomvds>
+</edom>
+        </attrdomv>
+        <attrdomv><rdom>
+            <rdommin>0</rdommin>
+            <rdommax>100</rdommax>
+            <attrunit>percent</attrunit>
+            <attrmres>10</attrmres>
+          </rdom>
+        </attrdomv>
+      </attr>
+      <attr>
+  <attrlabl>rain</attrlabl><attrdef>Intensity of rain.						</attrdef><attrdefs>Producer Defined</attrdefs><attrdomv>
+    <edom>
+      <edomv>9999</edomv>
+      <edomvd>Data not recorded.</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>1</edomv>
+      <edomvd>Mist</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>0</edomv>
+      <edomvd>No rain</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>2</edomv>
+      <edomvd>Very light rain</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>4</edomv>
+      <edomvd>Heavy rain</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>3</edomv>
+      <edomvd>Rain</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+</attr>
+      <attr>
+  <attrlabl>wind</attrlabl><attrdef>Wind strength according to the Beaufort scale</attrdef><attrdefs>Producer Defined</attrdefs><attrdomv>
+    <edom>
+      <edomv>9999</edomv>
+      <edomvd>No data recorded</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>0</edomv>
+      <edomvd>Calm</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>1</edomv>
+      <edomvd>Light air</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>3</edomv>
+      <edomvd>Gentle breeze</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>2</edomv>
+      <edomvd>Light breeze</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>6</edomv>
+      <edomvd>Strong breeze</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>4</edomv>
+      <edomvd>Moderate breeze</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+</attr>
+      <attr>
+  <attrlabl>gust</attrlabl><attrdef>Gust strength according to the Beaufort scale.</attrdef><attrdefs>Producer Defined</attrdefs><attrdomv>
+    <edom>
+      <edomv>9999</edomv>
+      <edomvd>No data recorded</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>0</edomv>
+      <edomvd>Calm</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>1</edomv>
+      <edomvd>Light air</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>3</edomv>
+      <edomvd>Gentle breeze</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>2</edomv>
+      <edomvd>Light breeze</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>4</edomv>
+      <edomvd>Moderate breeze</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+  <attrdomv>
+    <edom>
+      <edomv>5</edomv>
+      <edomvd>Fresh breeze</edomvd>
+      <edomvds>Producer defined</edomvds>
+    </edom>
+  </attrdomv>
+</attr>
+    </detailed>
+    <overview>
+      <eaover>This section of the XML includes one ‘Detailed’ tab for each of the four CSV files included in this data release: (1) site and sampling coordinate data, (2) mosquito capture data, (3) mosquito avian malaria infection data, and (4) point-transect distance sampling data.</eaover>
+      <eadetcit>None</eadetcit>
+    </overview>
+  </eainfo>
+  <distinfo>
+    <distrib>
+      <cntinfo>
+        <cntperp>
+          <cntper>GS ScienceBase</cntper>
+          <cntorg>U.S. Geological Survey</cntorg>
+        </cntperp>
+        <cntaddr>
+          <addrtype>mailing address</addrtype>
+          <address>Denver Federal Center, Building 810, Mail Stop 302</address>
+          <city>Denver</city>
+          <state>CO</state>
+          <postal>80225</postal>
+          <country>United States</country>
+        </cntaddr>
+        <cntvoice>1-888-275-8747</cntvoice>
+        <cntemail>sciencebase@usgs.gov</cntemail>
+      </cntinfo>
+    </distrib>
+    <distliab>Unless otherwise stated, all data, metadata and related materials are considered to satisfy the quality standards relative to the purpose for which the data were collected. Although these data and associated metadata have been reviewed for accuracy and completeness and approved for release by the U.S. Geological Survey (USGS), no warranty expressed or implied is made regarding the display or utility of the data on any other system or for general or scientific purposes, nor shall the act of distribution constitute any such warranty. Any use of trade, firm, or product names is for descriptive purposes only and does not imply endorsement by the U.S. Government.</distliab>
+    <stdorder>
+      <digform><digtinfo>
+          <formname>Digital Data</formname>
+        </digtinfo>
+        <digtopt><onlinopt><computer><networka><networkr>https://doi.org/10.5066/xxxxxxxx</networkr></networka></computer></onlinopt></digtopt></digform>
+      <fees>None</fees>
+    </stdorder>
+  </distinfo>
+  <metainfo>
+    <metd>20230313</metd>
+    <metc>
+      <cntinfo>
+        <cntorgp>
+          <cntorg>U.S. Geological Survey Pacific Island Ecosystem Research Center</cntorg>
+        </cntorgp>
+        <cntpos>Data Steward</cntpos>
+        <cntaddr>
+          <addrtype>physical</addrtype>
+          <address>Bldg. 344, Crater Rim Drive</address>
+          <city>Hawaii National Park </city>
+          <state>Hawaii </state>
+          <postal>96718</postal>
+          <country>USA</country>
+        </cntaddr>
+        <cntvoice>808-985-6420</cntvoice>
+        <cntemail>pierc-datasteward@usgs.gov</cntemail>
+      </cntinfo>
+    </metc>
+    <metstdn>FGDC Biological Data Profile of the Content Standard for Digital Geospatial Metadata</metstdn>
+    <metstdv>FGDC-STD-001.1-1999</metstdv>
+  </metainfo>
+</metadata>
